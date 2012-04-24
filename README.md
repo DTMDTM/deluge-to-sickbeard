@@ -17,6 +17,9 @@ This will call the script with three arguments:
 - The torrent name (identical to the filename if it's a single file, identical to the folder if it's a folder)
 - The folder where the torrent is stored
 
+Please open deluge-to-sb.py to edit the settings specific for your system, such as where your stuff should go
+and for which trackers you want to use this.
+
 This script works best if you have deluge setup to have labels for your series trackers (I use it with BTN)
 and tell deluge to move those torrents to a specific folder. In this case you can have a folder, say 
 /some/path/to/btn where deluge moves all your completed btn torrents. Since 'btn' is the lowest folder in that path
