@@ -58,8 +58,3 @@ if os.path.split(torrentrootpath)[1] in trackers:
         torrentname = remove_prefix(torrentname)
         destinationpath = os.path.join(destinationfolder, torrentname)
         os.link(torrentpath, destinationpath)
-
-
-        
-
-
