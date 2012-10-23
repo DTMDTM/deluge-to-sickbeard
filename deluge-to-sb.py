@@ -31,7 +31,7 @@ trackers = ['btn']
 def remove_prefix(name):
     for prefix in unwanted_prefixes:
         if name.startswith(prefix):
-            return name.replace(prefix,'',1)
+            return name.replace(prefix, '', 1)
     return name
 
 
@@ -47,7 +47,7 @@ if os.path.split(torrentrootpath)[1] in trackers:
             for name in files:
                 ext = os.path.splitext(name)[1]
                 if ext not in excluded_extensions:
-                    sourcepath = os.path.join(root,name)
+                    sourcepath = os.path.join(root, name)
 
                     name = remove_prefix(name)
 
