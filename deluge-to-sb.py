@@ -5,9 +5,9 @@ import sys
 
 args = sys.argv
 
-torrentid = args[0]
-torrentname = args[1]
-torrentrootpath = args[2]
+torrentid = args[1]
+torrentname = args[2]
+torrentrootpath = args[3]
 
 
 # These file types will not be linked
