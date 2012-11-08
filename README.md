@@ -24,5 +24,6 @@ This script works best if you have deluge setup to have labels for your series t
 and tell deluge to move those torrents to a specific folder. In this case you can have a folder, say 
 /some/path/to/btn where deluge moves all your completed btn torrents. Since 'btn' is the lowest folder in that path
 and 'btn' is in the 'trackers' list, the script will execute for btn-torrents - and only those.
+You can have multiple trackers this way, for example both BTN and PTP have an api and providers for SickBeard and Couch Potato, respectively. With this plugin you can use both at the same time.
 
 
