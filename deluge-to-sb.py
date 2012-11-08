@@ -5,9 +5,9 @@ import sys
 
 args = sys.argv
 
-torrentid = args[0]
-torrentname = args[1]
-torrentrootpath = args[2]
+torrentid = args[1]
+torrentname = args[2]
+torrentrootpath = args[3]
 
 
 # These file types will not be linked
@@ -40,7 +40,7 @@ destination_dict = dict(zip(trackers, destinations))
 def remove_prefix(name):
     for prefix in unwanted_prefixes:
         if name.startswith(prefix):
-            return name.replace(prefix,'',1)
+            return name.replace(prefix, '', 1)
     return name
 
 
@@ -78,8 +78,3 @@ if tracker in trackers:
         torrentname = remove_prefix(torrentname)
         destinationpath = os.path.join(destination_dict[tracker], torrentname)
         os.link(torrentpath, destinationpath)
-
-
-        
-
-
